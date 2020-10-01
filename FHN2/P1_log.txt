@@ -1,0 +1,76 @@
+c = 0.2:0.05:0.3
+k2 = -1.08:0.01:-0.88
+figure 63-1 periodical
+
+c = 0.3:0.05:0.4
+k2 = -1.08:0.01:-0.88
+figure 63-1 periodical
+
+c = 0.4:0.05:0.5
+k2 = -1.08:0.01:-0.88
+figure 54-43, 27-22 nonperiodical, others periodical
+
+c = 0.5:0.05:0.6
+k2 = -1.08:0.01:-0.88
+figure 63-43, 39-22, 12-1 nonperiodical
+
+c = 0.6:0.05:0.7
+k2 = -1.08:0.01:-0.88
+figure 63-1 nonperiodical
+
+c = 0.7:0.05:0.8
+k2 = -1.08:0.01:-0.88
+figure 63-1 nonperiodical
+
+c = 0.8:0.05:0.9
+k2 = -1.08:0.01:-0.88
+figure 63-1 nonperiodical
+
+c = 0.9:0.05:1
+k2 = -1.08:0.01:-0.88
+figure 63-1 nonperiodical
+
+c = 0.5:0.01:0.6
+k2 = -1.08:0.01:-0.88
+231-169, 167-148, 145-127, 123-106, 101-85, 78-64, 56-43, 34-22, 12-1 nonperiodical
+
+c = 0:0.001:0.02
+k2 = -0.88;
+34-?
+24,23,18,16,12,10
+
+c = 0:0.0001:0.0100
+k2 = -0.88;
+100-35, 34-31?, 30-1 periodical
+
+
+c = 0.0088;
+k2 = -1.08:0.01:-0.88
+13 is the most chaotic one
+
+c = 0.0201:0.0001:0.0300
+k2 = -0.88;
+all chaotic
+
+1.Increasing the length of data set can remarkably enhance the accuracy, but also increase the calculations.
+So we can adjust the sampling frequency to reduce computation while ensure accuracy.
+2.Use parallel loop and gpuArray to speed up. It is strongly recommended when you have a large-size array 
+and nested loops to run.
+3.The correlation dimensions of chaotic cases are more likely to be much higher than others.
+
+
+1.kernel and filter
+2.fourier transform
+3.nmse and error rate
+4.adjust # of pdms according to ein, to avoid overfitting or underfitting
+
+c = 0.0088;
+k2 = -0.98;
+rp1
+dmc = 9
+ip1
+dmc = 2
+
+
+
+0.005:0.005:0.600
